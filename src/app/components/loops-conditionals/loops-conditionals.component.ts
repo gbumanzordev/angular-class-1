@@ -15,35 +15,34 @@ export class LoopsConditionalsComponent implements OnInit {
   animals = [];
   rvsp = 'no';
   people: Person[];
-  constructor() { }
+  constructor() {}
 
   ngOnInit(): void {
     this.people = [
       {
         id: 1,
-        name: 'mary'
+        name: 'mary',
       },
       {
         id: 1,
-        name: 'Peter'
+        name: 'Peter',
       },
       {
         id: 1,
-        name: 'Ana'
+        name: 'Ana',
       },
       {
         id: 1,
-        name: 'Matthew'
+        name: 'Matthew',
       },
       {
         id: 1,
-        name: 'Andrew'
+        name: 'Andrew',
       },
-    ]
+    ];
   }
 
   trackById(index: number, person: Person) {
     return person.id;
   }
-
 }

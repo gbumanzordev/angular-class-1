@@ -11,13 +11,10 @@ import { LoopsConditionalsComponent } from './components/loops-conditionals/loop
     AppComponent,
     TsClassComponent,
     BindingComponent,
-    LoopsConditionalsComponent
+    LoopsConditionalsComponent,
   ],
-  imports: [
-    BrowserModule,
-    FormsModule,
-  ],
+  imports: [BrowserModule, FormsModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
