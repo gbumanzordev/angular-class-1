@@ -1,0 +1,21 @@
+<div class="div">
+  <h1 *ngIf="age === 4">age is three</h1>
+</div>
+<div class="div2">
+  <h2 [hidden]="age === 4" >hidden</h2>
+</div>
+<ng-container *ngFor="let person of people; trackBy:trackById">
+  <h3>{{ person.name }}</h3>
+</ng-container>
+<br><br><br><br>
+<h1>
+
+  <ng-container [ngSwitch]="rvsp">
+    <div *ngSwitchCase="'yes'">Tu vas a ir a ese evento</div>
+    <div *ngSwitchCase="'no'">Tu no vas a ir a ese evento</div>
+    <div *ngSwitchCase="'maybe'">Tal vez vayas a ese evento</div>
+    <div *ngSwitchDefault>No entendi tu respuesta.</div>
+  </ng-container>
+</h1>
+
+<div>Lorem ipsum dolor sit amet.</div>
